@@ -7,6 +7,10 @@ from cv_bridge import CvBridge
 mosaic_img = None
 bridge = CvBridge()
 
+def mosaic(src, ratio=0.1):
+    small = cv2.resize(src, None, fx=ratio, fy=ratio, interpolation=cv2.INTER_NEAREST)
+    return cv2.resize(small, src.shape[:2][::-1], interpolation=cv2.INTER_NEAREST)
+
 def make_mosaic(message):
     global mosaic_img
     # $ find / 2>/dev/null | grep haarcascade_frontalface_default.xml 
@@ -20,7 +24,7 @@ def make_mosaic(message):
     if len(facedetect) > 0:
         # make mosaic
         for x, y, w, h in facedetect:
-            mosaic_img = dst[y:y + height, x:x + width] = mosaic(dst[y:y + height, x:x + width], 0.1)
+            mosaic_img = img[y:y + height, x:x + width] = mosaic(img[y:y + height, x:x + width], 0.1)
 
 
 if __name__=='__main__':
@@ -30,5 +34,5 @@ if __name__=='__main__':
     rate = rospy.Rate(10)
     while not rospy.is_shutdown():
         ros_img = bridge.cv2_to_imgmsg(mosaic_img, "bgr8")
-        pub.publish(ros_img)
+        pub.publish(mosaic_img)
         rate.sleep()
