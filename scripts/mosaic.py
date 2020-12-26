@@ -4,6 +4,7 @@ import cv2
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 
+mosaic_img = None
 bridge = CvBridge()
 
 def make_mosaic(message):
@@ -23,7 +24,6 @@ def make_mosaic(message):
 
 
 if __name__=='__main__':
-    global mosaic_img
     rospy.init_node('mosaic')
     sub = rospy.Subscriber('cv_camera/image_raw', Image, make_mosaic)
     pub = rospy.Publisher('mosaic_face', Image, queue_size=1)
