@@ -30,4 +30,5 @@ https://www.youtube.com/embed/BlISqbMTJe
 [3] [Python, OpenCVで画像にモザイク処理（全面、一部、顔など）](https://note.nkmk.me/python-opencv-mosaic/)
 
 # ライセンス
-
+このリポジトリはBCDを付与している．
+詳しくは[LICENSE]()で確認してください．
