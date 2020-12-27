@@ -21,7 +21,7 @@
 8. 同じネットワーク内にある端末のウェブブラウザで`{ラズベリーパイのIPアドレス}:8080`にアクセスして`/mosaic_face`をクリックすると見ることができる
 
 # デモンストレーション
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BlISqbMTJes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://www.youtube.com/embed/BlISqbMTJe
 
 # 参考文献
 [1] [ロボットシステム学第10回（ROS）](https://www.youtube.com/watch?v=PL85Pw_zQH0)\
