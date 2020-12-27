@@ -1,5 +1,5 @@
 # 2020_robosys
-[cv_camera](https://github.com/OTL/cv_camera)から画像を取得して，人の顔が含まれていたらモザイクをかけるプログラム．
+[cv_camera](https://github.com/OTL/cv_camera)からウェブカメラの画像データを取得して，人の顔が含まれていたらモザイクをかけるプログラム．
 # 動作環境
 以下の環境を前提として開発した
 * Raspberry Pi 4 Model B / 8GB
