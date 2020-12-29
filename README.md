@@ -26,8 +26,8 @@
 10. 同じネットワーク内にある端末のウェブブラウザで`{ラズベリーパイのIPアドレス}:8080`にアクセスして`/mosaic_face`をクリックすると見ることができる
 
 # デモンストレーション
-[<img src="https://lh3.googleusercontent.com/pw/ACtC-3ePeztCp1Rhk5ELwn2uJw6yJFkEdXPWuuMA26i3K6W-rENSu8EGw4kaHwKMX1ypo1i5SPPbFyySkEHQBycQImRa5hkWmY7bxcfdVlonHQ7B0JLISx4h4oy4fonmdJyahF9LK3_D0LpiJ4suvwbqa7Dd=w1306-h979-no?authuser=2">](https://www.youtube.com/embed/BlISqbMTJe)
-https://www.youtube.com/embed/BlISqbMTJe
+[<img src="https://lh3.googleusercontent.com/pw/ACtC-3ePeztCp1Rhk5ELwn2uJw6yJFkEdXPWuuMA26i3K6W-rENSu8EGw4kaHwKMX1ypo1i5SPPbFyySkEHQBycQImRa5hkWmY7bxcfdVlonHQ7B0JLISx4h4oy4fonmdJyahF9LK3_D0LpiJ4suvwbqa7Dd=w1306-h979-no?authuser=2">](https://youtu.be/BlISqbMTJes)
+https://youtu.be/BlISqbMTJes
 
 # 参考文献
 [1] [ロボットシステム学第10回（ROS）](https://www.youtube.com/watch?v=PL85Pw_zQH0)\
