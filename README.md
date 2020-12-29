@@ -5,21 +5,25 @@
 * Raspberry Pi 4 Model B / 8GB
 * Ubuntu 20.04
 * ROS Noetic Ninjemys
+* OpenCv 4.2.0
 
 # 前提条件
 * ROS Norticがあらかじめインストールされていること\
 インストール方法は[Ryuichi Ueda](https://github.com/ryuichiueda)氏の[ros_setup_scripts_Ubuntu20.04_server](https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu20.04_server/blob/master/step1.bash)からインストールできる
 * 同じくRyuichi Ueda氏の[ロボットシステム学第10回（ROS）](https://www.youtube.com/watch?v=PL85Pw_zQH0)に従って，cv_cameraとweb_video_serverが動作する環境を整えてあること
 * OpenCVを使うことができる環境であること
+
 # インストール方法
 1. `$ ls ~/catkin_ws/src`でディレクトリを移動する
 2. `$ git clone https://github.com/Akutagawa50/2020_robosys.git`でリポジトリを複製する
 3. `$ sudo chmod +x ./2020_robosys/scripts/mosaic.py `で実行権限を与える
-4. `$ roscore &`でroscoreを立ち上げる
-5. `$ rosrun cv_camera cv_camera_node &`でcv_cameraをバックグラウンドで実行する
-6. `$ rosrun web_video_server web_video_server &`でweb_camera_serverをバックグラウンドで実行する
-7. `$ rosrun 2020_robosys mosaic.py`でmosaic.pyを実行する
-8. 同じネットワーク内にある端末のウェブブラウザで`{ラズベリーパイのIPアドレス}:8080`にアクセスして`/mosaic_face`をクリックすると見ることができる
+4. `$ find / 2>/dev/null | grep haarcascade_frontalface_default.xml `で haarcascade_frontalface_default.xml のあるディレクトリを探してコピーしておく
+5. `$ vi 2020_robosys/scripts/mosaic.py `でテキストエディタを開いて，20行目のcascade_pathに 4. でコピーしたパスを代入して保存しておく
+6. `$ roscore &`でroscoreをバックグラウンド立ち上げる
+7. `$ rosrun cv_camera cv_camera_node &`でcv_cameraをバックグラウンドで実行する
+8. `$ rosrun web_video_server web_video_server &`でweb_camera_serverをバックグラウンドで実行する
+9. `$ rosrun 2020_robosys mosaic.py`でmosaic.pyを実行する
+10. 同じネットワーク内にある端末のウェブブラウザで`{ラズベリーパイのIPアドレス}:8080`にアクセスして`/mosaic_face`をクリックすると見ることができる
 
 # デモンストレーション
 https://www.youtube.com/embed/BlISqbMTJe
