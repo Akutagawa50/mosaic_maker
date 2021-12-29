@@ -18,7 +18,7 @@ https://youtu.be/BlISqbMTJes
 
 ## インストール方法
 ### 前提条件
-* ROS Norticがあらかじめインストールされていること\
+* ROS NorticがRaspberry Pi にあらかじめインストールされていること\
 インストール方法は[Ryuichi Ueda](https://github.com/ryuichiueda)氏の[ros_setup_scripts_Ubuntu20.04_server](https://github.com/ryuichiueda/ros_setup_scripts_Ubuntu20.04_server/blob/master/step1.bash)からインストールできる
 * 同じくRyuichi Ueda氏の[ロボットシステム学第10回（ROS）](https://www.youtube.com/watch?v=PL85Pw_zQH0)に従って，cv_cameraとweb_video_serverが動作する環境を整えてあること
 * OpenCVを使うことができる環境であること
