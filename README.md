@@ -1,4 +1,4 @@
-# 2020_robosys
+# mosaic_make
 ## リポジトリの概要
 [cv_camera](https://github.com/OTL/cv_camera)からウェブカメラの画像データを取得して，人の顔が含まれていたらモザイクをかけるプログラム．
 
